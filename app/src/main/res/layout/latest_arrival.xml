@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:elevation="8dp"
+    app:cardBackgroundColor="#FF9800"
+    app:cardCornerRadius="8dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp">
+
+
+        <ImageView
+            android:id="@+id/image_arrival"
+            android:layout_width="180dp"
+            android:layout_height="100dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/girlwallet"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/arrival_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:text="womenbag"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/image_arrival" />
+
+        <TextView
+            android:id="@+id/arrival_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="N41o195"
+            app:layout_constraintLeft_toLeftOf="@+id/arrival_name"
+            app:layout_constraintTop_toBottomOf="@id/arrival_name" />
+
+        <TextView
+            android:id="@+id/arrival_model"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Louis Viutton"
+            app:layout_constraintLeft_toLeftOf="@id/arrival_name"
+            app:layout_constraintTop_toBottomOf="@id/arrival_type" />
+
+        <TextView
+            android:id="@+id/ratting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="⭐⭐⭐⭐⭐"
+            android:textSize="10dp"
+            app:layout_constraintLeft_toLeftOf="@id/arrival_name"
+            app:layout_constraintTop_toBottomOf="@id/arrival_model" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:text="100000"
+            android:textColor="#F44336"
+            app:layout_constraintBottom_toBottomOf="@id/ratting"
+            app:layout_constraintLeft_toRightOf="@id/ratting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ks"
+            android:textColor="#F44336"
+            app:layout_constraintBottom_toBottomOf="@id/ratting"
+            app:layout_constraintRight_toRightOf="@id/image_arrival" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
